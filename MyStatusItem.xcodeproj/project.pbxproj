@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		FB98AE001AB325D6004E55FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB98ADFF1AB325D6004E55FD /* Cocoa.framework */; };
 		FB98AE0A1AB325D6004E55FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB98AE081AB325D6004E55FD /* InfoPlist.strings */; };
-		FB98AE0C1AB325D6004E55FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB98AE0B1AB325D6004E55FD /* main.m */; };
+		FB98AE0C1AB325D6004E55FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB98AE0B1AB325D6004E55FD /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FB98AE101AB325D6004E55FD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FB98AE0E1AB325D6004E55FD /* Credits.rtf */; };
-		FB98AE131AB325D6004E55FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB98AE121AB325D6004E55FD /* AppDelegate.m */; };
+		FB98AE131AB325D6004E55FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB98AE121AB325D6004E55FD /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FB98AE161AB325D6004E55FD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB98AE141AB325D6004E55FD /* MainMenu.xib */; };
 		FB98AE181AB325D6004E55FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB98AE171AB325D6004E55FD /* Images.xcassets */; };
 		FB98AE1F1AB325D6004E55FD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB98AE1E1AB325D6004E55FD /* XCTest.framework */; };
 		FB98AE201AB325D6004E55FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB98ADFF1AB325D6004E55FD /* Cocoa.framework */; };
 		FB98AE281AB325D6004E55FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB98AE261AB325D6004E55FD /* InfoPlist.strings */; };
 		FB98AE2A1AB325D6004E55FD /* MyStatusItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB98AE291AB325D6004E55FD /* MyStatusItemTests.m */; };
-		FB98AE351AB3283E004E55FD /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB98AE341AB3283E004E55FD /* AppController.m */; };
+		FB98AE351AB3283E004E55FD /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB98AE341AB3283E004E55FD /* AppController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FB98AE3C1AB32B40004E55FD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB98AE3A1AB32B40004E55FD /* icon.png */; };
-		FB98AE3D1AB32B40004E55FD /* icon-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = FB98AE3B1AB32B40004E55FD /* icon-alt.png */; };
+		FB98AE411AB339BF004E55FD /* icon-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = FB98AE401AB339BF004E55FD /* icon-alt.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		FB98AE331AB3283E004E55FD /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		FB98AE341AB3283E004E55FD /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		FB98AE3A1AB32B40004E55FD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		FB98AE3B1AB32B40004E55FD /* icon-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-alt.png"; sourceTree = "<group>"; };
+		FB98AE401AB339BF004E55FD /* icon-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-alt.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 		FB98ADF31AB325D6004E55FD = {
 			isa = PBXGroup;
 			children = (
+				FB98AE401AB339BF004E55FD /* icon-alt.png */,
 				FB98AE3A1AB32B40004E55FD /* icon.png */,
-				FB98AE3B1AB32B40004E55FD /* icon-alt.png */,
 				FB98AE331AB3283E004E55FD /* AppController.h */,
 				FB98AE341AB3283E004E55FD /* AppController.m */,
 				FB98AE051AB325D6004E55FD /* MyStatusItem */,
@@ -172,8 +172,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB98AE2D1AB325D6004E55FD /* Build configuration list for PBXNativeTarget "MyStatusItem" */;
 			buildPhases = (
-				FB98ADF81AB325D6004E55FD /* Sources */,
 				FB98ADF91AB325D6004E55FD /* Frameworks */,
+				FB98ADF81AB325D6004E55FD /* Sources */,
 				FB98ADFA1AB325D6004E55FD /* Resources */,
 			);
 			buildRules = (
@@ -243,7 +243,7 @@
 			files = (
 				FB98AE0A1AB325D6004E55FD /* InfoPlist.strings in Resources */,
 				FB98AE3C1AB32B40004E55FD /* icon.png in Resources */,
-				FB98AE3D1AB32B40004E55FD /* icon-alt.png in Resources */,
+				FB98AE411AB339BF004E55FD /* icon-alt.png in Resources */,
 				FB98AE181AB325D6004E55FD /* Images.xcassets in Resources */,
 				FB98AE101AB325D6004E55FD /* Credits.rtf in Resources */,
 				FB98AE161AB325D6004E55FD /* MainMenu.xib in Resources */,
@@ -313,6 +313,7 @@
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		FB98AE261AB325D6004E55FD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -397,7 +398,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyStatusItem/MyStatusItem-Prefix.pch";
@@ -411,7 +411,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyStatusItem/MyStatusItem-Prefix.pch";

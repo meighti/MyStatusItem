@@ -14,5 +14,26 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="494" customClass="AppDelegate"/>
         <customObject id="420" customClass="NSFontManager"/>
+        <menu id="lg8-ET-uL6" userLabel="StatusItem">
+            <items>
+                <menuItem title="Hello Mac" id="gfz-Fv-Ycg">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="helloWorld:" target="FIG-Yu-IfK" id="GPu-xq-z8l"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" id="S20-XM-D61">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-1" id="rrW-ET-sBI"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="FIG-Yu-IfK" customClass="AppController">
+            <connections>
+                <outlet property="statusMenu" destination="lg8-ET-uL6" id="nIg-wI-X9o"/>
+            </connections>
+        </customObject>
     </objects>
 </document>
